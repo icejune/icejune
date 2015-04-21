@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<link href="css/all.css" rel="stylesheet" type="text/css" />
+<script src="js/all.js" type="text/javascript"></script>
+<title>icejune's javascript</title>
+</head>
+<body>
+<div class="box">
+	<div class="title"><h3>点击更换图片</h3></div>
+	<div class="contain">
+		<div class="block_1">
+			<img id="myimage" onclick="changeImage()" src="images/pic_bulboff.gif" width="100" height="180">
+			<p>点击灯泡就可以打开或关闭这盏灯</p>
+		</div>
+	</div>
+</div>
+<div class="box">
+	<div class="title"><h3>点击按钮检测年龄</h3></div>
+	<div class="contain">
+		<div class="block_2">
+			<p>年龄：<input type="text" value="17" id="age" /><br /><br />是否达到法定年龄？<br /><br /><button type="button" onclick="judgeAge()">点击按钮</button></p>
+			<p id="show_age" class="color_red"></p>
+		</div>
+	</div>
+</div>
+<div class="box">
+	<div class="title"><h3>判断星期几</h3></div>
+	<div class="contain">
+		<div class="block_3">
+			<p>点击下面的按钮显示今天星期几<br /><br /><button type="button" onclick="judgeWeek()">点击按钮</button></p>
+			<p id="show_week" class="color_red"></p>
+			<p><br />今天是周末嘛？<br /><br /><button type="button" onclick="judgeWeeked()">点击按钮</button></p>
+			<p id="show_weekend" class="color_red"></p>
+		</div>
+	</div>
+</div>
+<div class="box">
+	<div class="title"><h3>判断Email是否合法</h3></div>
+	<div class="contain">
+		<div class="block_4">
+			<p><input type="text" id="email_text" name="email" value="" /><br /><br /><button type="button" onclick="judgeEmail()">点击按钮</button></p>
+			<p id="show_result" class="color_red"></p>
+		</div>
+	</div>
+</div>
+<div class="box">
+	<div class="title"><h3>查找最大数</h3></div>
+	<div class="contain">
+		<div class="block_5">
+			<p><form name="numfile"><input type="text" name="num_1" value="" /><br /><br /><input type="text" name="num_2" value="" /><br /><br /><input type="text" name="num_3" value="" /><br /><br /><button type="button" onclick="findMax()">点击按钮</button></form></p>
+			<p id="show_maxnum" class="color_red"></p>
+		</div>
+	</div>
+</div>
+<div class="box">
+	<div class="title"><h3>查找最大数</h3></div>
+	<div class="contain">
+		<div class="block_6">
+			<p>实例在window对象中使用 addEventListener() 方法。</p><p>尝试重置浏览器的窗口触发 "resize" 事件句柄。</p><p id="demo"></p>
+		</div>
+	</div>
+</div>
+<script>
+window.addEventListener("resize", function(){
+    document.getElementById("demo").innerHTML = Math.random();
+});
+</script>
+</body>
+</html>
